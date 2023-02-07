@@ -7,8 +7,10 @@
 length_of_the_chocolate = int(input('Введите длинну шоколадки: '))
 chocolate_width = int(input('Введите ширину шоколадки: '))
 slice = int(input('Отломить долек за раз: '))
-
+n = length_of_the_chocolate*chocolate_width
 if slice < length_of_the_chocolate and slice < chocolate_width:
+    print('No')
+elif slice >= length_of_the_chocolate*chocolate_width:
     print('No')
 elif slice % length_of_the_chocolate != 0 and slice % chocolate_width !=0:
     print('No')
